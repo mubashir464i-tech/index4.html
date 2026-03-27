@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City Care Clinic</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+/* ===== HEADER & NAV ===== */
+header {
+    background: #2c7be5;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 { margin: 0; }
+
+nav { margin-top: 10px; }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover { text-decoration: underline; }
+
+/* ===== HERO IMAGE ===== */
+.hero { width: 100%; max-height: 250px; overflow: hidden; }
+.hero img { width: 100%; object-fit: cover; }
+
+/* ===== CONTAINER ===== */
+.container { padding: 20px; }
+
+/* ===== CARD ===== */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* ===== SERVICES GRID ===== */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.service-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service-card:hover { transform: scale(1.05); }
+
+.service-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+    nav a { display: block; margin: 5px 0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>City Care Clinic</h1>
+    <p>Dr. Ahmed - General Physician</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#timings">Timings</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Image -->
+<div class="hero">
+    <img src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg" alt="Clinic Hero Image">
+</div>
+
+<div class="container" id="home">
+
+    <!-- About -->
+    <div class="card" id="about">
+        <img src="https://images.pexels.com/photos/1170976/pexels-photo-1170976.jpeg" alt="Doctor Image">
+        <h2>About Us</h2>
+        <p>We provide professional medical services with care and trust. Our team ensures patients feel comfortable and safe during every visit.</p>
+    </div>
+
+    <!-- Services -->
+    <div class="card" id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <a href="#general" class="service-card">
+                <img src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg" alt="General Consultation">
+                <h3>General Consultation</h3>
+                <p>Professional check-ups and advice for all ages.</p>
+            </a>
+            <a href="#pediatric" class="service-card">
+                <img src="https://images.pexels.com/photos/3845766/pexels-photo-3845766.jpeg" alt="Pediatric Care">
+                <h3>Pediatric Care</h3>
+                <p>Special care for children and young patients.</p>
+            </a>
+            <a href="#lab" class="service-card">
+                <img src="https://images.pexels.com/photos/4226181/pexels-photo-4226181.jpeg" alt="Lab Tests">
+                <h3>Lab Tests</h3>
+                <p>Accurate and fast diagnostic services.</p>
+            </a>
+            <a href="#counseling" class="service-card">
+                <img src="https://images.pexels.com/photos/1170976/pexels-photo-1170976.jpeg" alt="Health Counseling">
+                <h3>Health Counseling</h3>
+                <p>Guidance on nutrition, lifestyle, and wellness.</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Timings -->
+    <div class="card" id="timings">
+        <h2>Timings</h2>
+        <p>Mon - Sat: 5 PM to 10 PM</p>
+        <p>Sunday: Closed</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="card" id="contact">
+        <img src="https://images.pexels.com/photos/3845766/pexels-photo-3845766.jpeg" alt="Clinic Image">
+        <h2>Contact</h2>
+        <p>Phone: 03335585592</p>
+        <a class="btn" href="https://wa.me/923335585592">Book Appointment on WhatsApp</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2022 City Care Clinic</p>
+</footer>
+
+</body>
+</html>
